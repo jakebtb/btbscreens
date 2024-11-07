@@ -2,10 +2,9 @@
 
 
 while true; do
-    BTBScreens="location"
     # Check if the app is running
     pid=$(ps aux | grep 'bash' | grep -v grep | awk '{print $2}')
-    BTBScreens_PATH="C:\Users\jacob\OneDrive\Desktop\TestingScripts\BTBScreens.sh"
+    BTBScreens_PATH=""
     echo "PID is $pid"
 
     if [ -n "$pid" ]; then
