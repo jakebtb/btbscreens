@@ -3,8 +3,8 @@
 
 while true; do
     # Check if the app is running
-    pid=$(ps aux | grep 'bash' | grep -v grep | awk '{print $2}')
-    BTBScreens_PATH=""
+    pid=$(ps aux | grep 'BTBScreens' | grep -v grep | awk '{print $2}')
+    BTBScreens_PATH="C:\Users\btb.BTB-PHILLY\Desktop\btb-screens-app\BTBScreens.exe"
     echo "PID is $pid"
 
     if [ -n "$pid" ]; then
